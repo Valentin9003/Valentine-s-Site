@@ -1,19 +1,152 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <title>14. Getting Started with jQuery</title>
-    <script src="node_modules/jquery/dist/jquery.min.js"></script> 
-    <script src="node_modules/mustache/mustache.min.js"></script>
-    <script src="node_modules/handlebars/dist/handlebars.min.js"></script>
-    <script src="node_modules/sammy/lib/min/sammy-0.7.6.min.js"></script>
+    <meta charset="UTF-8">
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-</head>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+ <script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="node_modules/handlebars/dist/handlebars.js"></script>
+<script src="node_modules/sammy/lib/sammy.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<style>
+body{
+    background-color:lemonchiffon;
+}
+#author{
+    position: fixed;
+    bottom:0%;
+   
+    left: 75%;
+    
+    
+}
+#author:active{
+    font-family:fantasy;
+    font-size: 130%
+}
 
+.menu{
+   text-align:left;
+   color:rgb(32, 212, 9);
+ font-size: 30px;
+  margin: 3%;
+  
+}
+.menu:hover{
+    color:black;
+    background-color:rgb(32, 212, 9);
+    border-radius: 10px;
+    font-family:fantasy;
+   
+    text-decoration:  none;
+
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    
+    
+}
+.menu:active{
+    color: aliceblue;
+}
+
+.btn-div{
+    position:fixed;
+   top:0pc;
+   right:0pc;
+    background-color:rgb(32, 212, 9);
+    font-size: 30px;
+}
+.btn-div:hover{
+    color:lightcoral;
+    font-family:fantasy;
+}
+</style>
+<title>Vaim Soft</title>
+ </head>
 <body>
+       
+<div id="root">
+    <nav>
+        <div class="#menu">
+            <a class="menu" href="#/index">Начало</a>      
+            <a class="menu" href="#/services">Услуги</a>   
+            <a class="menu" href="#/contacts">Контакти</a> 
+            <a class="menu" href="#/aboutus">За нас</a>    
+          <div > <button class="btn btn-info btn-div" id="btn" onclick= ChangeLanguage()>English</button></div>
+          
+        </div>
+    </br>
+    </nav>
+
+    <div id="content">  </div>
+ <footer><div><strong id="author">Author: Valentin Stoev 2019</strong></div></footer>
+</div>
 
 
-    <script type="text/javascript" src="JavaScript/App/script>
+
+<!--<script src="js/templates.js"></script> function for invoke a templates-->
+
+
+<script>
+   
+ function ChangeLanguage(t){
+    let btn =  document.getElementById('btn');
+    if(btn.textContent == "English"){
+        BulgarianLanguage(btn);
+    }
+    else if(btn.textContent = "Български"){
+        EnglishLanguage(btn);
+    }
+    };
+
+    function BulgarianLanguage(btn){
+        this.btn.textContent = "Български";
+    }
+
+    function EnglishLanguage(btn){
+      
+        this.btn.textContent = "English";
+        
+}
+
+    const App = Sammy('#content', function () {
+    
+     
+    
+      this.get('#/index',function(){
+     
+      this.partial("./HBS/Index.hbs");
+
+      });
+      this.get('#/contacts',function(){
+    
+      this.partial("./HBS/Contacts.hbs");
+
+      });
+
+      this.get('#/services',function(){
+    
+    this.partial("./HBS/Services.hbs");
+
+    });
+
+      this.get('#/aboutus',function(){
+     
+      this.partial("./HBS/aboutus.hbs");
+
+      });
+        
+       this.notFound = function(){console.log('Handled')}
+    });
+
+this.NotFo
+   
+ 
+ App.run('#/');
+</script>
+
 </body>
-
 </html>
