@@ -1,8 +1,6 @@
-let BulgarianLanguage = {
+ exports.lang =  BulgarianLang = {
 
-    Hello: Здравей,
-    Neshto: ggg,
+    Hello: 'Zdrasti',
+    Neshto: 'Neshto',
 
 };
-
-export {BulgarianLanguage} from module.BulgarianLanguage ;

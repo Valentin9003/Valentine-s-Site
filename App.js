@@ -1,26 +1,16 @@
-const $ = require('jquery');
- const mustache = require('mustache');
- const handleBars = require('handlebars');
+const bgLanguage = require ("./Language/bulgarianLanguage.js");
+let bg  =  bgLanguage.lang;
 
-
- import  {bulgarianLanguage} from  "../Language/bulgarianLanguage";
-let g = bulgarianLanguage;
-console.log(g.Hello);
-;
+console.log(bg);
 
 
 
 
 
-//Logic for Language
-function language(lang){
 
-    if(lang == "Bulgarian"){
- return "Bulgarian{''}";
-}
-else if(lang == "English"){
-return "English{' '}";
-}
-};
+
+
+
+
 
 

@@ -2,200 +2,49 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-     <!-- Bootstrap CSS -->
-     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+         
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/handlebars/dist/handlebars.js"></script>
+    <script src="node_modules/sammy/lib/sammy.js"></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>-->
+    <link rel="stylesheet" href="CSS/Main.css"></link>
 
+    <title>Vaim Soft</title>
 
-
-   
- <script src="node_modules/jquery/dist/jquery.js"></script>
-<script src="node_modules/handlebars/dist/handlebars.js"></script>
-<script src="node_modules/sammy/lib/sammy.js"></script>
-<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>-->
-
-
-<style>
-body{
-    background-color:lemonchiffon;
-}
-footer{
-    background-color:black;
-    position: static;
-    bottom:0%;
-};
-
-footer>div>strong{
-    color:cornsilk;
-  
-}
-#menu{
-background-color:black;
-/* width: 100%; */
-
-}
-#author{
-    position: fixed;
-    
-    bottom:0%;
-   font-size: 1em;
-    right:5px;
-    font-family:fantasy;
-   
-    color:white;
-    
-}
-
-
-.components{
-   
-   color:rgb(32, 212, 9);
- /* font-size: 23px; */
- font-size: 1rem;
-  margin: 3em;
-  align-content: space-between;
-  
-}
-
-.components:hover{
-  color:white;
- background-color:white; 
-    background-color:black;
-    
-    font-family:fantasy;
-   
-    text-decoration:  none;
-
-   
-    
-    
-}
-menu:active{
-    color: red;
-}
-
-#lang{
-    
-    color:white;;
-    background-color: black;
-    
-    font-family:fantasy;
-   border-radius: 50%;
-   border-color:black;
-
-  
-  
-}
-#lang:hover{
-    color:black;;
-    background-color: white;
-   
-    font-family:fantasy;
-   border-radius: 50%;
-
-   
-}
-
-#lang:active{
-    color: rgb(255, 240, 240);
-}
-#footer{
-    position: fixed;
-    background-color: black;
-    bottom:0%;
-   width: 100%;
-}
-
-</style>
-<title>Vaim Soft</title>
- </head>
+</head>
 <body>
        
 <div id="root">
     <nav>
         <div id="menu">
-           <a class="components" href="#/index">Начало</a>     
-           <a class="components" href="#/services">Услуги</a>   
-           <a class="components" href="#/contacts">Контакти</a> 
-           <a class="components" href="#/aboutus">За нас</a>     
+          <div> <a class="components" href="#/index">Начало</a>     </div>
+          <div> <a class="components" href="#/services">Услуги</a>  </div> 
+          <div> <a class="components" href="#/contacts">Контакти</a></div> 
+          <div> <a class="components" href="#/aboutus">За нас</a>   </div>  
            <button id="lang" onclick= ChangeLanguage()>EN</button>
          
         </div>
-    </br>
+    
     </nav>
-
+ </br> 
     <div id="content">  </div>
-    <div style="background-color: red" class="col-4">0xcvxcvcxvxcvxc</div>
+    
+   
+   <script>console.log(bg);</script> 
  
 </div>
-<footer><div id="footer"><div id="author">&copy; 2019 Valentin Stoev</div></div></footer>
+<footer>
+    <div id="footer">VaimSoft&reg;</div>
+        <div id="author">&copy; 2019 Valentin Stoev</div>
+    
+</footer>
 
 
 <!--<script src="js/templates.js"></script> function for invoke a templates-->
-
-
-<script>
-   
- function ChangeLanguage(t){
-     
-    let btn =  document.getElementById('lang');
-    console.log(btn.textContent);
-   
-    if(btn.textContent == "EN"){
-       
-        BulgarianLanguage(btn);
-        
-    }
-    else if(btn.textContent = "БГ"){
-        EnglishLanguage(btn);
-    }
-    };
-
-    function BulgarianLanguage(btn){
-        
-        btn.textContent = "БГ";
-    }
-
-    function EnglishLanguage(btn){
-     
-        btn.textContent = "EN";
-        
-}
-
-    const App = Sammy('#content', function () {
-    
-     
-    
-      this.get('#/index',function(){
-     
-      this.partial("./HBS/Index.hbs");
-
-      });
-      this.get('#/contacts',function(){
-    
-      this.partial("./HBS/Contacts.hbs");
-
-      });
-
-      this.get('#/services',function(){
-    
-    this.partial("./HBS/Services.hbs");
-
-    });
-
-      this.get('#/aboutus',function(){
-     
-      this.partial("./HBS/aboutus.hbs");
-
-      });
-        
-       this.notFound = function(){console.log('Handled')}
-    });
-
-
-   
- 
- App.run('#/');
-</script>
+<script src="/JavaScript/ChangeLanguage.js"></script>
+<script src="JavaScript/Sammy.js"></script>
 
 </body>
 </html>
