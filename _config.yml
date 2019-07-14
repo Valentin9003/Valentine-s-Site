@@ -1,4 +1,4 @@
 theme: jekyll-theme-architect
-plugins: jekyll-redirect-from
+plugins: jekyll-redirect-from https://github.com
 redirect_from: "https://github.com"
 redirect_from: https://github.com
