@@ -1,8 +1,2 @@
 Access-Control-Allow-Origin:*  
-Access-Control-Allow-Methods:GET,POST
-Access-Control-Max-Age: 1000
-Access-Control-Allow-Headers:*
-theme: jekyll-theme-architect
-plugins: jekyll-redirect-from https://github.com
-redirect_from: "https://github.com"
-redirect_from: https://github.com
+
