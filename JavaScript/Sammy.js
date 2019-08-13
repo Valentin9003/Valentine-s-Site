@@ -1,12 +1,18 @@
 
-    const App = Sammy('#content', function () {
+
+
+
+    const App = Sammy('#content', function() {
     
+      this.use('Handlebars', 'hbs');
+     
      
     
         this.get('#/index',function(){
-       
-        this.partial("./HBS/Index.hbs");
-  
+      this.Title = "Index Title";
+  this.partial("./HBS/Index.hbs");
+    
+
         });
         this.get('#/contacts',function(){
       
@@ -30,3 +36,5 @@
       });
   
    App.run('#/');
+
+  

@@ -1,4 +1,8 @@
-function ChangeLanguage(t){
+//....
+
+
+//......
+function ChangeLanguage(){
      
     let btn =  document.getElementById('lang');
     console.log(btn.textContent);

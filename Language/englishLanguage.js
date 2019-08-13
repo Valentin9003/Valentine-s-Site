@@ -1,5 +1,6 @@
-let Englishlanguage = {
+exports.English = {
 
-    Hello: Hello,
+    Hello: "Hello on English",
 
 };
+// export{English};

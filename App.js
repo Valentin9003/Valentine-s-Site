@@ -1,7 +1,18 @@
-const bgLanguage = require ("./Language/bulgarianLanguage.js");
-let bg  =  bgLanguage.lang;
 
-console.log(bg);
+
+
+// import { BulgarianLanguage } from "./Language/BulgarianLanguage.js";
+// import { EnglishLanguage } from "./Language/EnglishLanguage.js";
+
+// var bg = BulgarianLanguage;
+// var en = EnglishLanguage;
+// export{en};
+// export{bg};
+
+
+
+
+
 
 
 

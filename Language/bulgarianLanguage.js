@@ -1,4 +1,5 @@
- exports.lang =  BulgarianLang = {
+
+export const Bulgarian = {
 
     Hello: 'Zdrasti',
     Neshto: 'Neshto',
