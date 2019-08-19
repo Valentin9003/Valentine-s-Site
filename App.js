@@ -1,4 +1,4 @@
-import { currentLanguage } from "Valentin9003.github.io/Valentine-s-Site/blob/master/Language/ChangeLanguage.js";
+import { currentLanguage } from "../Valentin9003.github.io/Valentine-s-Site/blob/master/Language/ChangeLanguage.js";
 
 
 
