@@ -1,4 +1,4 @@
-import { currentLanguage } from "/blob/master/ChangeLanguage.js";
+import { currentLanguage } from "/blob/master/Language/ChangeLanguage.js";
 
 
 
