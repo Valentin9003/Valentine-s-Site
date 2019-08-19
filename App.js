@@ -1,4 +1,4 @@
-import { currentLanguage } from ".//Valentine-s-Site/Language/ChangeLanguage.js";
+import { currentLanguage } from "Valentine-s-Site/Language/ChangeLanguage.js";
 
 
 
