@@ -1,3 +1,76 @@
-h1{
-    background-color: aqua;
+#email{
+
+    position: absolute;
+    bottom: 5%;
+    left: 3%;
+    color: green;
+    border:blue;
+    
+   
 }
+
+
+.picture {
+  position:fixed;
+  width: 100%;
+height: auto;
+z-index: -1;
+  }
+  
+
+@media screen and (max-height: 780px ),( max-width: 720px){
+  #email{
+    
+    position: static;
+    bottom: 7%;
+    padding: 12%;
+    color: black;
+    border:blue;
+    align-items: center;
+  }
+}
+#title{
+  border-style: solid;
+  border-radius: 40%;
+  display:flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: fantasy;
+  background-color: burlywood;
+  color:black;
+  text-align: center
+    
+}
+#vaimSoftContent{
+  
+  font-family:'Times New Roman', Times, serif;
+  border-style: solid;
+  border-color: blue;
+  color:white;
+  background-color: black;
+  margin-bottom: 1%;
+  text-align: center;
+  border-radius: 20%;
+
+}
+#vaimSoftTitle{
+
+flex-flow: row;
+flex-wrap: wrap;
+justify-content: center;
+font-family: fantasy;
+border-radius: 40%;
+background-color: yellowgreen;
+color:black;
+text-align: center
+}
+#content{
+ 
+
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color:black;
+/* text-align:center; */
+
+
+} 

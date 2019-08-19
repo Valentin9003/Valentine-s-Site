@@ -1,14 +1,70 @@
 
-<script src="node_modules//sammy/vendor/templating/handlebars.js"></script>
+
 
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <link rel="stylesheet" href="/CSS/Contacts.css"></link>
+        <link rel="stylesheet" href="/CSS/Index.css"></link>
+        
 </head>
 <body>
-<h1>Contacts</h1>
-{{Title}}
+
+
+<img src="../Images/homePicture.jpg" alt="Logo" class="picture">
+
+<div id="vaimSoftTitle">{{VaimSoftTitle}}</div> 
+<div id="vaimSoftContent">{{VaimSoft}}</div> 
+<div id="title">{{OverViewTitle}}</div> 
+<div id="content">{{OverView}}</div> 
+
+<div id="title">{{ExpandingTitle}}</div> 
+<div id="content">{{Expanding}}</div> 
+
+<div id="title">{{TrustTitle}}</div> 
+<div id="content">{{Trust}}</div> 
+
+
+<div id="email"> 
+ <div>
+<div>
+  <labal>{{Email}}</labal> 
+  </div>
+<div>
+  <input id="mail" type="text" name="Email" placeholder="{{EmailPlaceHolder}}"></input>
+  </div>
+</div>
+
+<div>
+  <div>
+  <labal>{{Name}}</labal>
+  </div>
+ 
+<div>
+  <input id="name" type="text" name="Name" placeholder="{{NamePlaceHolder}}"></input>
+  </div>
+</div>
+
+<div>
+  <div>
+  <labal>{{Content}}</labal>
+  </div>
+ 
+  <div>
+
+  <textarea id="message" type="input" cols="23" rows="4" placeholder="{{MessagePlaceHolder}}" ></textarea>
+  </div>
+  </div>
+  </br>
+<div >
+  <button id="btnSend">{{Send}}</button>
+</div>
+</div>
+
+
+
+
+<script src="../JavaScript/EmailSender.js"></script>
+
 </body>
 </html>

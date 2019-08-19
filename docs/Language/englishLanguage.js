@@ -1,5 +1,0 @@
-let Englishlanguage = {
-
-    Hello: Hello,
-
-};

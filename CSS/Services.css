@@ -1,3 +1,28 @@
-h1{
-    background-color: blue;
+
+#item{
+    display: flex;
+    color:black;
+    
+    flex-flow: row;
+    flex-wrap: wrap;
+  justify-content: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ 
 }
+#title{
+    border-style: solid;
+    border-radius: 40%;
+    flex-flow:row;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: fantasy;
+  background-color: burlywood;
+  color:black;
+  text-align: center
+}
+.picture {
+    position:fixed;
+    width: 100%;
+height: auto;
+z-index: -1;
+  }

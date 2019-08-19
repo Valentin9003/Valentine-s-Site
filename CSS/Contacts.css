@@ -1,3 +1,45 @@
-h1{
-    background-color: yellow;
+
+#content{
+    display: flex;
+    color:black;
+    
+    flex-flow: row;
+    flex-wrap: wrap;
+  justify-content: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ 
 }
+#item{
+    border-style: solid;
+    border-radius: 90%;
+    padding: 2%;
+    flex-flow:row;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: fantasy;
+  background-color: burlywood;
+  color:black;
+  text-align: center;
+
+}
+#insideItem{
+   
+    border-radius: 70%;
+    display: inline-flex;
+    padding: 1%;
+    flex-flow:row;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: fantasy;
+  background-color: burlywood;
+  color:black;
+  text-align: center;
+
+}
+
+.picture {
+    position:fixed;
+    width: 100%;
+height: auto;
+z-index: -1;
+  }

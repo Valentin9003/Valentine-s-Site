@@ -3,57 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
-         
+    <link href="./Images/favicon.bmp" type="image/x-icon" rel="icon" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="node_modules/jquery/dist/jquery.js"></script>
-    <script src="node_modules/handlebars/dist/handlebars.js"></script>
-    <script src=".//node_modules/sammy/lib/sammy.js"></script>
-    <script src=".//node_modules/sammy/lib/plugins/sammy.handlebars.js"></script>
-    <script src=".//node_modules/handlebars/dist/handlebars.runtime.min.js"></script>
-    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>-->
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/handlebars/dist/handlebars.js"></script>
+    <script src="../node_modules/sammy/lib/sammy.js"></script>
+    <script src="../node_modules/sammy/lib/plugins/sammy.handlebars.js"></script>
+
+    <script src="../node_modules/handlebars/dist/handlebars.runtime.min.js"></script>
+  
     <link rel="stylesheet" href="CSS/Main.css"></link>
+    
 
     <title>Vaim Soft</title>
-
+    
 </head>
 <body>
-       
+  
 <div id="root">
     <nav>
         <div id="menu">
-          <div> <a class="components" href="#/index">Начало</a>     </div>
-          <div> <a class="components" href="#/services">Услуги</a>  </div> 
-          <div> <a class="components" href="#/contacts">Контакти</a></div> 
-          <div> <a class="components" href="#/aboutus">За нас</a>   </div>  
-           <button id="lang" onclick= ChangeLanguage()>EN</button>
+          <div> <a id="index" class="components" href="#/index">Начало</a>  </div>
+          <div> <a id="services" class="components" href="#/services">Услуги</a>  </div>
+          <div> <a id="aboutus" class="components" href="#/aboutus">За нас</a>   </div>  
+          <div> <a id="contacts" class="components" href="#/contacts">Контакти</a></div> 
+          <div><button id="lang" >EN</button> </div> 
          
         </div>
     
     </nav>
+    
  </br> 
-    <!-- <div id="content">  </div>
+    <div id="content">  </div>
   
-    //<script type="module">
-    import { currentLanguage } from "../JavaScript/Language.js";
-    console.log(currentLanguage);
-     </script> -->
+  
  
 </div>
 <footer>
-    <div id="footer">VaimSoft&reg;</div>
-        <div id="author">&copy; 2019 Valentin Stoev</div>
+    <div id="footer"><strong id="company">ВаимСофт</strong>&reg;</div>
+        <div id="author">&copy; <strong id="authorName">2019 Валентин Стоев</strong></div>
     
 </footer>
 
-<!--<script src="js/templates.js"></script> function for invoke a templates-->
-<!-- <script src="/App.mjs"></script> -->
-<script src="/JavaScript/ChangeLanguage.js"></script>
 
-<script src="Language/BulgarianLanguage.js"></script>
-<script src="JavaScript/Language.js"></script>
+<script type="module" src="App.js"></script>
+
 <script src="node_modules/sammy/vendor/templating/handlebars.js"></script>
-<script src="JavaScript/Sammy.js"></script>
-<script src="typo.js"></script>
+
+
 
 </body>
 </html>

@@ -1,6 +1,6 @@
 
 body{
-    background-color:lemonchiffon;
+    background-color:white;
 }
 footer{
     background-color:black;
@@ -12,7 +12,7 @@ footer>div>strong{
     color:cornsilk;
 }
 #menu{
-background-color:black; 
+background-color:darkblue; 
  width: 100%; 
 display:flex;
  flex-direction:row; 
@@ -69,7 +69,7 @@ menu:active{
 }
 #lang{
 color:white;;
-background-color: black;
+background-color: blue;
 font-family:fantasy;
 border-radius: 50%;
 border-color:black;
