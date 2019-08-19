@@ -1,4 +1,4 @@
-import { currentLanguage } from "../JavaScript/ChangeLanguage.js";
+import { currentLanguage } from "https://github.io/blob/master/JavaScript/ChangeLanguage.js";
 
 
 
