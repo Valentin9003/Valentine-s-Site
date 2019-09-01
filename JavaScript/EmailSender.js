@@ -1,4 +1,4 @@
-let btn = document.getElementById("btnSend").addEventListener("click", function(event){
+var btn = document.getElementById("btnSend").addEventListener("click", function(event){
   let message = $("#message").val();
 let name =  $("#name").val();
 let email =  $("#mail").val();
