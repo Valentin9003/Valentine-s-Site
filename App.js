@@ -1,8 +1,5 @@
 import { currentLanguage } from "../JavaScript/ChangeLanguage.js";
-
-
-
- let refreshLanguageContent = $("#lang").on("click",function(){
+let refreshLanguageContent = $("#lang").on("click",function(){
   
   App.refresh();
     
@@ -12,12 +9,7 @@ import { currentLanguage } from "../JavaScript/ChangeLanguage.js";
   
       this.use('Handlebars', 'hbs');
       
-    
-     
-
-      
-       
-       this.get('#/index',function(){
+      this.get('#/index',function(){
     
       
           this.OverView = currentLanguage.Index.OverView;
@@ -84,21 +76,3 @@ import { currentLanguage } from "../JavaScript/ChangeLanguage.js";
       });
   
     App.run('#/index');
-    
-    
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
